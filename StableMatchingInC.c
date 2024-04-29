@@ -121,11 +121,11 @@ int main(){
     }
     
     //printam in fisier rezultatele
-    fprintf(out,"Firma   Candidat\n");
-    fprintf(out,"-----------------\n");
+    fprintf(out,"Candidat -> Firma\n");
+    fprintf(out,"------------------\n");
     for (int i = 0; i < n; i++){
-        fprintf(out,"%c    ->",'A' + freeD[i]);
-        fprintf(out,"    %c\n",'q'+i);
+        fprintf(out,"%c        ->",'q'+i);
+        fprintf(out,"    %c\n",'A' + freeD[i]);
     }
     
     //eliberam memoria si inchidem fisierele
